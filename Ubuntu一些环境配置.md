@@ -39,11 +39,12 @@ Ping出的结果中如果可以看到teredo就代表开启成功
 ## 识别盘符
 找到Ubuntu中文件盘名称和Windows盘符的对应，记录下来
 
+![识别盘符](https://github.com/edencfc/Ubuntu-Study/blob/master/2019-05-19%2020-02-15.png)
 ## /etc/fstab修改
 `vim fstab`打开文件，参考已有的盘符将需要挂载的硬盘信息添加进去
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3Mzc4NTEyMV19
+eyJoaXN0b3J5IjpbMTAxOTI2MjU4NywtNTczNzg1MTIxXX0=
 -->
