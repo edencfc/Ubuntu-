@@ -54,10 +54,13 @@ su root
 ```bash
 	sudo mount -a
 ```
-这样重启后E-I的NTFS分区都会自动加载了，确认月：
-
+这样重启后E-I的NTFS分区都会自动加载了，确认一下：
+```bash
+	cd ../../mnt
+	ls
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkwOTc1NjM2LDEzMzYzODE2NjMsLTU3Mz
-c4NTEyMV19
+eyJoaXN0b3J5IjpbLTk3MTMzNzE3MiwxMzM2MzgxNjYzLC01Nz
+M3ODUxMjFdfQ==
 -->
