@@ -3,6 +3,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 > [Stackedit项目地址](https://github.com/benweet/stackedit.git)
+# 
 # CSS Loader版本匹配
 该项目代码在高版本的CSS Loader中会出现报错，最快的处理方法有两种
 1. CSS Loader版本降级至0.28
@@ -24,7 +25,7 @@ npm rebuild node-sass
 ```
 # 项目部署
 处理完上面两个问题，项目就能正常部署了，参考官方文档
-```ba
+```bash
     # install dependencies
     npm install
     
@@ -36,7 +37,7 @@ npm rebuild node-sass
     
     # build for production and view the bundle analyzer report
     npm run build --report
-
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NDgzNzQyXX0=
+eyJoaXN0b3J5IjpbLTE0NDA1MTUxMTBdfQ==
 -->
