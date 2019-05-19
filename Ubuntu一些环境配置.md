@@ -54,13 +54,13 @@ su root
 ```bash
 	sudo mount -a
 ```
-这样重启后E-I的NTFS分区都会自动加载了，确认一下：
+这样重启后E-I的NTFS分区都会自动加载了，确认以下：
 ```bash
 	cd ../../mnt
 	ls
 ```
-
+看到e～i的目录直接进入，就能看到分区文件了
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MTMzNzE3MiwxMzM2MzgxNjYzLC01Nz
-M3ODUxMjFdfQ==
+eyJoaXN0b3J5IjpbMjUxOTE0NTk4LDEzMzYzODE2NjMsLTU3Mz
+c4NTEyMV19
 -->
