@@ -39,7 +39,7 @@ npm rebuild node-sass
     npm run build --report
 ```
 # 在线写Markdown文档并实时同步到Github
-金
+进入[StackEdit官网](https://stackedit.io/)，在Workspace中选择Github并授权
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTAwNTAyNThdfQ==
+eyJoaXN0b3J5IjpbMTcyNjE2ODU2OV19
 -->
