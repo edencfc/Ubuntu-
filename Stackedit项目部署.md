@@ -3,8 +3,8 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 > [Stackedit项目地址](https://github.com/benweet/stackedit.git)
-# 
-# CSS Loader版本匹配
+# 项目部署常见问题与解决
+## CSS Loader版本匹配
 该项目代码在高版本的CSS Loader中会出现报错，最快的处理方法有两种
 1. CSS Loader版本降级至0.28
 2. 注释掉cssLoader的minimize配置，在该项目中，在utlis.js文件中
@@ -18,12 +18,12 @@
   }  
   }  
 ```
-# Node Sass could not find a binding for your current environment问题
+## Node Sass could not find a binding for your current environment问题
 该问题主要是编译环境的问题，Node.js版本和操作系统切换都会导致报错，如：如果之前是在Windows中编译的，再到Linux中启动就会报错。解决办法
 ```bash
 npm rebuild node-sass
 ```
-# 项目部署
+## 项目部署
 处理完上面两个问题，项目就能正常部署了，参考官方文档
 ```bash
     # install dependencies
@@ -38,6 +38,8 @@ npm rebuild node-sass
     # build for production and view the bundle analyzer report
     npm run build --report
 ```
+# 在线写Markdown文档并实时同步到Github
+金
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDA1MTUxMTBdfQ==
+eyJoaXN0b3J5IjpbNTAwNTAyNThdfQ==
 -->
