@@ -42,14 +42,16 @@ Ping出的结果中如果可以看到teredo就代表开启成功
 ![file](https://raw.githubusercontent.com/edencfc/Ubuntu-Study/master/20-02-15.png)
 
 ## /etc/fstab修改
+首先是获得读写权限
 ```bash
 su root
 ```
 `vim fstab`打开文件，参考已有的盘符将需要挂载的硬盘信息添加进去
 ![file](https://raw.githubusercontent.com/edencfc/Ubuntu-Study/master/20-09-48.png)
+如果出现`Metadata kept in Windows cache, refused to mount.`的报错，是因为为indo
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mjc5NzEyNDQsMTMzNjM4MTY2MywtNT
-czNzg1MTIxXX0=
+eyJoaXN0b3J5IjpbMTg3OTc1NTYyMCwxMzM2MzgxNjYzLC01Nz
+M3ODUxMjFdfQ==
 -->
