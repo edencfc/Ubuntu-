@@ -39,7 +39,9 @@ npm rebuild node-sass
     npm run build --report
 ```
 # 在线写Markdown文档并实时同步到Github
-进入[StackEdit官网](https://stackedit.io/)，在Workspace中选择Github并授权，就能在线写M阿人口
+进入[StackEdit官网](https://stackedit.io/)，在Workspace中选择Github并授权，就能在线写Markdown并同步了
+![file](https://raw.githubusercontent.com/edencfc/Ubuntu-Study/master/20-46-59.png)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgzNjIxMTA4XX0=
+eyJoaXN0b3J5IjpbLTI5OTEyNzcxNl19
 -->
