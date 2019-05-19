@@ -50,10 +50,13 @@ su root
 ![file](https://raw.githubusercontent.com/edencfc/Ubuntu-Study/master/20-09-48.png)
 如果出现`Metadata kept in Windows cache, refused to mount.`的报错，是因为双系统中Windows的硬盘并未彻底关闭，原因在Windows的快速启动功能，一种办法是关闭系统重启，进入Windows登录界面（不要登录）直接重启，再F12进入Ubuntu，重新修改fstab文件。
 
-
-
+## 挂载硬盘
+```bash
+	sudo mount -a
+```
+这样重启后E-I的NTFS分区都会重新加载
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNzQ0ODYyMywxMzM2MzgxNjYzLC01Nz
+eyJoaXN0b3J5IjpbLTk5MTM5MTg1NywxMzM2MzgxNjYzLC01Nz
 M3ODUxMjFdfQ==
 -->
