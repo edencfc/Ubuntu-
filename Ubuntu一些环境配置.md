@@ -39,7 +39,7 @@ sudo mkdir /mnt/i
 ## 识别盘符
 找到Ubuntu中文件盘名称和Windows盘符的对应，记录下来
 
-![file](https://raw.githubusercontent.com/edencfc/Ubuntu-Study/master/20-02-15.png)
+![file](https://raw.githubusercontent.com/edencfc/Ubuntu-Study/master/img/20-02-15.png)
 
 ## /etc/fstab修改
 首先是获得读写权限
@@ -47,7 +47,7 @@ sudo mkdir /mnt/i
 su root
 ```
 `vim fstab`打开文件，参考已有的盘符将需要挂载的硬盘信息添加进去
-![file](https://raw.githubusercontent.com/edencfc/Ubuntu-Study/master/20-09-48.png)
+![file](https://raw.githubusercontent.com/edencfc/Ubuntu-Study/master/img/20-09-48.png)
 如果出现`Metadata kept in Windows cache, refused to mount.`的报错，是因为双系统中Windows的硬盘并未彻底关闭，原因在Windows的快速启动功能，一种办法是关闭系统重启，进入Windows登录界面（不要登录）直接重启，再F12进入Ubuntu，重新修改fstab文件。
 
 ## 挂载硬盘
