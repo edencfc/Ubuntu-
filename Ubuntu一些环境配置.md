@@ -54,9 +54,10 @@ su root
 ```bash
 	sudo mount -a
 ```
-这样重启后E-I的NTFS分区都会重新加载
+这样重启后E-I的NTFS分区都会自动加载了，确认月：
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MTM5MTg1NywxMzM2MzgxNjYzLC01Nz
-M3ODUxMjFdfQ==
+eyJoaXN0b3J5IjpbNzkwOTc1NjM2LDEzMzYzODE2NjMsLTU3Mz
+c4NTEyMV19
 -->
