@@ -22,7 +22,21 @@
 ```bash
 npm rebuild node-sass
 ```
+# 项目部署
+处理完上面两个问题，项目就能正常部署了，参考官方文档
+```ba
+    # install dependencies
+    npm install
+    
+    # serve with hot reload at localhost:8080
+    npm start
+    
+    # build for production with minification
+    npm run build
+    
+    # build for production and view the bundle analyzer report
+    npm run build --report
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU1NDAzNDg2XX0=
+eyJoaXN0b3J5IjpbMTY2NDgzNzQyXX0=
 -->
