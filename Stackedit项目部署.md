@@ -18,7 +18,9 @@
   }  
 ```
 # Node Sass could not find a binding for your current environment问题
-该问题主要是编译环境的问题，如果之前是在Windows中编译的，再到Linux中启动就会报错，Node.js版本和操作系统环
+该问题主要是编译环境的问题，Node.js版本和操作系统切换都会导致报错，如：如果之前是在Windows中编译的，再到Linux中启动就会报错。解决办法
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NDIyODY1MV19
+eyJoaXN0b3J5IjpbLTEyMzczNTY2NzVdfQ==
 -->
