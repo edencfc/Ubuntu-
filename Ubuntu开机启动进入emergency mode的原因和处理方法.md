@@ -14,7 +14,7 @@
 1. 直接输入root密码
 2. vi /etc/fstab
 3. 将挂载NTFS分区的那几行删去
-4. wq退出
+4. :wq退出
 5. 不保存退出是:q!
 6. 修改完成后reboot
 
@@ -22,5 +22,5 @@
 
 正常进入Windows，然后重启进入Ubuntu
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NjUwOTg3NywxNDgxNjQ4MTZdfQ==
+eyJoaXN0b3J5IjpbMTkwMDAxOTY4OSwxNDgxNjQ4MTZdfQ==
 -->
