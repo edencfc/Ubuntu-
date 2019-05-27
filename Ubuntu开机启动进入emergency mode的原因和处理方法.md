@@ -21,6 +21,9 @@
 ## 另一种方式
 
 正常进入Windows，然后重启进入Ubuntu
+
+经确认，从Ubuntu重启进入Ubuntu是没有问题的，所以确实是抢夺硬盘加载权限导致的报错。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMDAxOTY4OSwxNDgxNjQ4MTZdfQ==
+eyJoaXN0b3J5IjpbLTE1NTAyNzE4NTksMTkwMDAxOTY4OSwxND
+gxNjQ4MTZdfQ==
 -->
