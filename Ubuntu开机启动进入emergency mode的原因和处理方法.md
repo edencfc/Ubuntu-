@@ -2,9 +2,9 @@
 
 # 起因
 
-起先Ubuntu系统是装在移动硬盘上通过USB连接的，由于笔记本电脑无法识别移动硬盘（可能是连接线的原因，月恩）
+起先Ubuntu系统是装在移动硬盘上通过USB连接的，由于笔记本电脑无法识别移动硬盘（可能是连接线的原因，或供电不足），将移动硬盘中的SSD拆下接入台式机的SATA接口，然而在启动时发现Ubuntu进入了Emergency Mode
 
-## Create files and folders
+## 原因分析
 
 The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
 
@@ -139,5 +139,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTE4NTc0OTVdfQ==
+eyJoaXN0b3J5IjpbMTg1Mzg0MjcwXX0=
 -->
