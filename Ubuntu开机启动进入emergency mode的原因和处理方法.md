@@ -8,7 +8,7 @@
 
 接口切换后对于其它盘的盘符出现了不一致，加载不存在的盘符导致了异常
 
-比如原来
+比如原来g盘和h盘，从sdb2/sdb3变成了sdd1/sdd2
 ![file](https://raw.githubusercontent.com/edencfc/Ubuntu-Study/master/img/20-09-48.png)
 
 
@@ -143,5 +143,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MjI4OTIyN119
+eyJoaXN0b3J5IjpbMTQ4MTY0ODE2XX0=
 -->
