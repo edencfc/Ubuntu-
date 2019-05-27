@@ -13,8 +13,12 @@
 在Emergency Mode状态下：
 1. 直接输入root密码
 2. vi /etc/fstab
+3. 将挂载NTFS分区的那几行删去
+4. wq退出
+5. 不保存退出是:q!
+6. 修改完成后reboot
 
-## Rename a file
+## 令
 
 You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
 
@@ -141,5 +145,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjM2MDU4NzksMTQ4MTY0ODE2XX0=
+eyJoaXN0b3J5IjpbMTg4NDYwOTYxNSwxNDgxNjQ4MTZdfQ==
 -->
