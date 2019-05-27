@@ -1,11 +1,8 @@
-# Emergency M
+# Emergency Mode
 
-Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
+# 起因
 
-
-# Files
-
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+起先Ubuntu系统是装在移动硬盘上通过USB连接的，由于笔记本电脑无法识别移动硬盘（可能是连接线的原因，月恩）
 
 ## Create files and folders
 
@@ -142,5 +139,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTU4MzE5ODFdfQ==
+eyJoaXN0b3J5IjpbLTE5OTE4NTc0OTVdfQ==
 -->
