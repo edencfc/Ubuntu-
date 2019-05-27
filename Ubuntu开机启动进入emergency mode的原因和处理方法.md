@@ -6,7 +6,11 @@
 
 ## 原因分析
 
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
+接口切换后对于其它盘的盘符出现了不一致，加载不存在的盘符导致了异常
+
+比如原来
+![file](https://raw.githubusercontent.com/edencfc/Ubuntu-Study/master/img/20-09-48.png)
+
 
 ## Switch to another file
 
@@ -139,5 +143,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1Mzg0MjcwXX0=
+eyJoaXN0b3J5IjpbMTU3MjI4OTIyN119
 -->
