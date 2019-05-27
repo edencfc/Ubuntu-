@@ -6,15 +6,13 @@
 
 ## 原因分析
 
-接口切换后对于其它盘的盘符出现了不一致，加载不存在的盘符导致了异常
+核对了前后盘符发现没有不一致的地方，怀疑是双系统中Windows对硬盘分区的抢夺导致的
 
-比如原来g盘和h盘，从sdb2/sdb3变成了sdd1/sdd2
-![file](https://raw.githubusercontent.com/edencfc/Ubuntu-Study/master/img/20-09-48.png)
+## 处理方式
 
-
-## Switch to another file
-
-All your files are listed in the file explorer. You can switch from one to another by clicking a file in the list.
+在Emergency Mode状态下：
+1. 直接输入root密码
+2. vi /etc/fstab
 
 ## Rename a file
 
@@ -143,5 +141,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MTY0ODE2XX0=
+eyJoaXN0b3J5IjpbLTIwMjM2MDU4NzksMTQ4MTY0ODE2XX0=
 -->
