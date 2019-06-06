@@ -41,7 +41,8 @@ npm rebuild node-sass
 # 在线写Markdown文档并实时同步到Github
 进入[StackEdit官网](https://stackedit.io/)，在Workspace中选择Github并授权，就能在线写Markdown并同步了
 ![file](https://raw.githubusercontent.com/edencfc/Ubuntu-Study/master/img/20-46-59.png)
+如果是gitee的话，url的地方输入gitee的地址即可。相对来说，一个比较大的缺点是不能直接上传截图
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5OTEyNzcxNl19
+eyJoaXN0b3J5IjpbMTg5MDkzOTc5MSwtMjk5MTI3NzE2XX0=
 -->
