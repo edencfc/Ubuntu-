@@ -1,6 +1,6 @@
 # Emergency Mode
 
-# 起因
+## 起因
 
 起先Ubuntu系统是装在移动硬盘上通过USB连接的，由于笔记本电脑无法识别移动硬盘（可能是连接线的原因，或供电不足），将移动硬盘中的SSD拆下接入台式机的SATA接口，然而在启动时发现Ubuntu进入了Emergency Mode
 
@@ -24,6 +24,6 @@
 
 经确认，从Ubuntu重启进入Ubuntu是没有问题的，所以确实是抢夺硬盘加载权限导致的报错。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTAyNzE4NTksMTkwMDAxOTY4OSwxND
-gxNjQ4MTZdfQ==
+eyJoaXN0b3J5IjpbLTM0MDQ1NjMwOCwtMTU1MDI3MTg1OSwxOT
+AwMDE5Njg5LDE0ODE2NDgxNl19
 -->
