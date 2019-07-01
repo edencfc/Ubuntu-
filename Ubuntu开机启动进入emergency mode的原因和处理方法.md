@@ -1,4 +1,4 @@
-# Emergency Mode
+﻿# Emergency Mode
 
 ## 起因
 
@@ -23,7 +23,3 @@
 正常进入Windows，然后重启进入Ubuntu
 
 经确认，从Ubuntu重启进入Ubuntu是没有问题的，所以确实是抢夺硬盘加载权限导致的报错。
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MDQ1NjMwOCwtMTU1MDI3MTg1OSwxOT
-AwMDE5Njg5LDE0ODE2NDgxNl19
--->

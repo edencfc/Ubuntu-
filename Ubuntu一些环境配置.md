@@ -1,4 +1,4 @@
-
+﻿
 
 
 
@@ -60,7 +60,3 @@ cd ../../mnt
 ls
 ```
 看到e～i的目录直接进入，就能看到分区文件了
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzQ4MDg5NzAsMTMzNjM4MTY2MywtNT
-czNzg1MTIxXX0=
--->

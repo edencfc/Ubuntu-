@@ -1,4 +1,4 @@
-
+﻿
 # 显卡驱动安装
 
 重点： **不需要禁用Nouveau**
@@ -22,8 +22,11 @@ $ sudo apt-get install nvidia-driver-418
 ```
 # PyTorch + CUDA + CUDNN安装
 CUDA套件安装比较麻烦，尤其CUDNN还要注册登陆下载等，反正深度学习环境本来就要安装PyTorch，在其官网给出的conda安装方法也有安装**cudatoolkit**，因此直接使用其官网命令：
+
 `conda install pytorch torchvision cudatoolkit=10.0 -c pytorch`
-如果下载极为缓慢一般是PyTorch会访问Anaconda的默认源，可以考虑中断直接用`pip`——重点是通过Anaconda安装**cudatoolkit**。
+
+如果下载极为缓慢一般是PyTorch会访问Anaconda的默认源，可以考虑中断直接用`pip`
+> 这种安装方法的重点是通过Anaconda安装**cudatoolkit**。
 
 # Tensorflow-gpu 安装
 
@@ -35,6 +38,3 @@ $ pip install tf-nightly-gpu # preview
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODU4MzM2MTVdfQ==
--->

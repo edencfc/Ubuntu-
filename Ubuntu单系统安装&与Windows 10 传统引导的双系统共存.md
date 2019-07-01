@@ -1,4 +1,4 @@
-# Ubuntu单系统安装&与Windows 10 传统引导的双系统共存
+﻿# Ubuntu单系统安装&与Windows 10 传统引导的双系统共存
 
 ## BIOS、UEFI、MBR和GPT
 参考资料：[操作系统的启动与引导问题 BIOS、UEFI、MBR、GPT](https://www.cnblogs.com/sddai/p/6354289.html)
@@ -46,7 +46,4 @@ boot | ext4 | 1G |
 安装Ubuntu后，再把装了Window10的SSD接回去。笔者的情况是开机会默认进入Ubuntu操作系统，如果F12切换进入Window10也没有问题，这样就实现了Ubuntu和传统引导方式的Windows10双系统共存。
 
 > 注意：
-> Windows10对机械硬盘的分区抢夺还是存在的，如果是Win10要切换回Ubuntu，依然要重启才能进入。
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODM3MTUxODVdfQ==
--->
+> 在Ubuntu 18.04.2 LTS版本中，不会再出现Windows10对机械硬盘的分区抢夺导致Ubuntu系统进不去的问题，但挂载的机械硬盘分区还是保持只读状态，因此Window10依然要重启后才能进入Ubuntu。
