@@ -7,11 +7,13 @@
 # 开启IPV6
 ```bash
 sudo apt-get install miredo
+sudo apt install net-tools
 ifconfig
 ```
 Ping出的结果中如果可以看到teredo就代表开启成功
 
 # 安装Node.js
+
 ```bash
 sudo apt-get install nodejs
 sudo apt-get install npm
@@ -60,3 +62,17 @@ cd ../../mnt
 ls
 ```
 看到e～i的目录直接进入，就能看到分区文件了
+
+# 查看端口占用情况
+
+```bash
+# 查看所有端口占用
+netstat -a
+# 查看指定端口占用
+lsof -i:PORT
+# 结束进程
+kill -9 PID
+```
+
+![file](img/00-17-54.png)
+
