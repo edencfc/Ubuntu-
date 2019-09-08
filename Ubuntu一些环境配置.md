@@ -4,10 +4,40 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 
+# 无线网卡无法识别
+
+使用FAST FW150UM和TPLINK无线网卡在Ubuntu 18.04都出现过无法识别的情况，并且不仅仅是在新装系统时，有时无线网卡拔插后也会无法识别，而二者的解决方式却一样。
+
+首先是查看自己无线网卡的型号与要手动安装的驱动是否一致，确认RTL8188EU驱动可用。
+
+```bash
+# github上的原始仓库
+git clone https://github.com/edencfc/rtl8188eu
+# 已经将该镜像同步到gitee
+git clone https://gitee.com/edencfc/rtl8188eu.git
+```
+
+## 安装驱动
+
+直接参考RTL8188EU的文档
+
+```bash
+# 进入RTL8188EU文件目录
+cd rtl8188eu
+make all
+sudo make install
+```
+
+**重启Ubuntu操作系统后无线网卡可以识别**
+
+*注意：RTL8188EU文件目录安装后最好不要删除，正如上文所述，无线网卡拔插后可能会无法识别，这时候需要重装驱动。*
+
 # 开启IPV6
+
 ```bash
 sudo apt-get install miredo
 sudo apt install net-tools
+sudo service miredo restart
 ifconfig
 ```
 Ping出的结果中如果可以看到teredo就代表开启成功
