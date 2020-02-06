@@ -26,11 +26,31 @@ git clone https://gitee.com/edencfc/rtl8188eu.git
 cd rtl8188eu
 make all
 sudo make install
+sudo depmod -a
+sudo modprobe 8188eu
 ```
 
 **重启Ubuntu操作系统后无线网卡可以识别**
 
 *注意：RTL8188EU文件目录安装后最好不要删除，正如上文所述，无线网卡拔插后可能会无法识别，这时候需要重装驱动。*
+
+## 可能出现的报错
+
+```verilog
+modporbe:ERROR could not insert '8188eu':Exec format error
+```
+
+解决办法
+
+```bash
+make clean
+make all
+sudo make install
+sudo depmod -a
+sudo modprobe 8188eu
+```
+
+
 
 # 开启IPV6
 
@@ -41,6 +61,60 @@ sudo service miredo restart
 ifconfig
 ```
 Ping出的结果中如果可以看到teredo就代表开启成功
+
+## 可能出现的报错
+
+```bash
+@-workstation:~$ sudo service miredo restart
+[sudo] password for kengkeng: 
+Job for miredo.service failed because the control process exited with error code.
+See "systemctl status miredo.service" and "journalctl -xe" for details.
+@-workstation:~$ systemctl status miredo.service
+● miredo.service - Teredo IPv6 tunneling
+   Loaded: loaded (/lib/systemd/system/miredo.service; enabled; vendor preset: e
+   Active: failed (Result: exit-code) since Thu 2020-02-06 09:47:14 CST; 1min 23
+  Process: 3273 ExecStartPre=/usr/sbin/miredo-checkconf -f /etc/miredo/miredo.co
+
+2月 06 09:47:04 -workstation systemd[1]: Starting Teredo IPv6 tunneling.
+2月 06 09:47:14 -workstation miredo-checkconf[3273]: Invalid host name “
+2月 06 09:47:14 -workstation miredo-checkconf[3273]: Server address not 
+2月 06 09:47:14 -workstation miredo-checkconf[3273]: Fatal configuration
+2月 06 09:47:14 -workstation systemd[1]: miredo.service: Control process
+2月 06 09:47:14 -workstation systemd[1]: miredo.service: Failed with res
+2月 06 09:47:14 -workstation systemd[1]: Failed to start Teredo IPv6 tun
+lines 1-12/12 (END)...skipping...
+● miredo.service - Teredo IPv6 tunneling
+   Loaded: loaded (/lib/systemd/system/miredo.service; enabled; vendor preset: enabled)
+   Active: failed (Result: exit-code) since Thu 2020-02-06 09:47:14 CST; 1min 23s ago
+  Process: 3273 ExecStartPre=/usr/sbin/miredo-checkconf -f /etc/miredo/miredo.conf (code=exited, status=255)
+
+2月 06 09:47:04 -workstation systemd[1]: Starting Teredo IPv6 tunneling...
+2月 06 09:47:14 -workstation miredo-checkconf[3273]: Invalid host name “teredo-debian.remlab.net” at line 6: Name or service not known
+2月 06 09:47:14 -workstation miredo-checkconf[3273]: Server address not specified
+2月 06 09:47:14 -workstation miredo-checkconf[3273]: Fatal configuration error
+2月 06 09:47:14 -workstation systemd[1]: miredo.service: Control process exited, code=exited status=255
+2月 06 09:47:14 -workstation systemd[1]: miredo.service: Failed with result 'exit-code'.
+2月 06 09:47:14 -workstation systemd[1]: Failed to start Teredo IPv6 tunneling.
+```
+
+感觉是因为刚开机的时候网络没连上导致的，解决办法：联网后重启
+
+```bash
+@-workstation:~$ sudo service miredo stop
+@-workstation:~$ sudo service miredo start
+# 然后就看到teredo了
+@-workstation:~$ ifconfig
+teredo: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1280
+        inet6 fe80::ffff:ffff:ffff  prefixlen 64  scopeid 0x20<link>
+        inet6 2001:0:53aa:64c:xxxx:xxxx:xxxx:xxxx  prefixlen 32  scopeid 0x0<global>
+        inet6 fe80::7faa:8b20:xxxx:xxxx  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3  bytes 168 (168.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+```
 
 # 安装Node.js
 
